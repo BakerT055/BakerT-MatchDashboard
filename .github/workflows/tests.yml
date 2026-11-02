@@ -1,0 +1,14 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pandas numpy openpyxl jinja2 scikit-learn
+      - run: python tests/test_core.py
+      - run: python tests/test_ml.py
+      - run: python tests/test_app_smoke.py

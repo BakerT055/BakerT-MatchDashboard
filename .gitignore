@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Local settings and your own data (never commit – may be licensed / private)
+settings.json
+data/*
+!data/sample_history.csv
+!data/sample_fixtures.csv
+!data/team_aliases.json
+
+# Secrets (never commit)
+.env
+*.key
+secrets.toml
+.streamlit/secrets.toml
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

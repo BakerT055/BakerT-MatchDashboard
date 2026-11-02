@@ -1,0 +1,5 @@
+{
+  "_help": "Map alternative team names to the one used in your results files. Keys starting with _ are ignored.",
+  "Man United": "Man Utd",
+  "Manchester United": "Man Utd"
+}
